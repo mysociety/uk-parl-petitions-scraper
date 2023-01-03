@@ -1,4 +1,5 @@
 import rich_click as click
+from .build import build_database
 
 
 @click.group()
@@ -11,8 +12,9 @@ def main():
 
 
 @cli.command()
-def example():
-    print("This is an example function")
+def build():
+    print("Downloading petitions data based on keywords")
+    build_database()
 
 
 if __name__ == "__main__":

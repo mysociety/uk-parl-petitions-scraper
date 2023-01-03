@@ -3,7 +3,9 @@
 
 [![badge](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mysociety/uk-parl-petitions-scraper/HEAD)
 
-null
+Script to extract data from UK petitions site related to environmental petitions, get constituency data counts, and analyse outlier petitions per constituency.
+
+environmental petitions are extracted using broad keywords, and then narrowed using GPT-3. You will need to set OPENAI_API_KEY.
 
 This repository is available online at https://github.com/mysociety/uk-parl-petitions-scraper
 
