@@ -24,7 +24,8 @@ def fetch_and_cache_url(url: str, params: dict = {}) -> dict[Any, Any]:
     parsed = urlparse(url_with_params)
     filename = Path(
         "data",
-        "private",
+        "interim",
+        "cache",
         parsed.netloc,
         parsed.path.lstrip("/") + urlencode(params, doseq=True) + ".json",
     )
