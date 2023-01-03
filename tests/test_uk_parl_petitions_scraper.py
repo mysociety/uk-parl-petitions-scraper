@@ -1,4 +1,4 @@
-import template_data_repo
+import uk_parl_petitions_scraper
 
 import pytest
 

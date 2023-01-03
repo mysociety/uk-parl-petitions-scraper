@@ -1,8 +1,8 @@
 theme: jekyll-theme-slate
-title: template_data_repo
-description: Standardised template for mysociety data repositories
+title: uk-parl-petitions-scraper
+description: null
 
-baseurl: "/template_data_repo"
+baseurl: "/uk-parl-petitions-scraper"
 url: "https://mysociety.github.io"
 
 collections:

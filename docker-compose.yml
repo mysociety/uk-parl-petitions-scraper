@@ -1,9 +1,9 @@
 services:
   app:
-    image: mysociety/template_data_repo:${TAG:-latest}
+    image: mysociety/uk-parl-petitions-scraper:${TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile.dev
-    working_dir: /workspaces/template_data_repo      
+    working_dir: /workspaces/uk_parl_petitions_scraper      
     volumes:
-      - ./:/workspaces/template_data_repo/
+      - ./:/workspaces/uk_parl_petitions_scraper/
