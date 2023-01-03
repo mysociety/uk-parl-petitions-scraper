@@ -1,5 +1,6 @@
 title: Petition signatures by constituency
-description: Signatures from each constituency for environmental petitions with over 1000 overall signatures
+description: Signatures from each constituency for environmental petitions with over
+  1000 overall signatures
 custom:
   row_count: 177450
 path: signatures.csv
@@ -31,19 +32,22 @@ schema:
     example: 446.0
   - name: std.res
     type: number
-    description: Standardised residual of the count of signatures from this constituency (above 2 is an outlier)
+    description: Standardised residual of the count of signatures from this constituency
+      (above 2 is an outlier)
     constraints:
       unique: false
     example: 313.41489935829577
   - name: expected
     type: number
-    description: Given normal distribution of signatures, expected count of signatures from this constituency
+    description: Given normal distribution of signatures, expected count of signatures
+      from this constituency
     constraints:
       unique: false
     example: 2.006842443348852
   - name: significant
     type: boolean
-    description: Boolean of whether the count of signatures from this constituency is significantly different from the expected count
+    description: Boolean of whether the count of signatures from this constituency
+      is significantly different from the expected count
     constraints:
       unique: false
       enum:

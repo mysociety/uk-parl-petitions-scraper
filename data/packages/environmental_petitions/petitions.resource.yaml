@@ -1,7 +1,8 @@
 title: Environmental petitions
-description: Extraction of Environmental petitions from the UK Parliament petitions website
+description: Extraction of Environmental petitions from the UK Parliament petitions
+  website
 custom:
-  row_count: 273
+  row_count: 754
 path: petitions.csv
 name: petitions
 profile: tabular-data-resource
@@ -83,7 +84,9 @@ schema:
     example: '2022-10-17'
   - name: is_environmental
     type: boolean
-    description: Whether the petition is related to the environment (generated via machine learning, some false negatives, generally good at removing the false positives)
+    description: Whether the petition is related to the environment (generated via
+      machine learning, some false negatives, generally good at removing the false
+      positives)
     constraints:
       unique: false
       enum:
@@ -92,7 +95,9 @@ schema:
     example: 'False'
   - name: openai_explanation
     type: string
-    description: OpenAI explanation for whether the petition is related to the environment (do not use publically, generating it improves the results and it's useful for debugging)
+    description: OpenAI explanation for whether the petition is related to the environment
+      (do not use publically, generating it improves the results and it's useful for
+      debugging)
     constraints:
       unique: false
     example: This petition does not relate to the environment.

@@ -1,0 +1,37 @@
+name: environmental_petitions
+title: Environmental petitions
+description: "UK Parliament petitions related (in a broad sense) to environmental\
+  \ issues\n"
+version: 0.1.0
+licenses:
+- name: CC-BY-4.0
+  path: https://creativecommons.org/licenses/by/4.0/
+  title: Creative Commons Attribution 4.0 International License
+contributors:
+- title: mySociety
+  path: https://mysociety.org
+  role: author
+custom:
+  build: uk_parl_petitions_scraper.build:build_database
+  tests:
+  - test_environmental_petitions
+  dataset_order: 0
+  download_options:
+    gate: default
+    survey: default
+    header_text: default
+  composite:
+    xlsx:
+      include: all
+      exclude: none
+      render: true
+    sqlite:
+      include: all
+      exclude: none
+      render: true
+    json:
+      include: all
+      exclude: none
+      render: true
+  change_log:
+    0.1.0: ''
