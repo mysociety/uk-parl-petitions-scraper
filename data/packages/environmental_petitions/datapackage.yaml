@@ -2,7 +2,7 @@ name: environmental_petitions
 title: Environmental petitions
 description: "UK Parliament petitions related (in a broad sense) to environmental\
   \ issues\n"
-version: 0.1.0
+version: 0.2.0
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
@@ -35,3 +35,4 @@ custom:
       render: true
   change_log:
     0.1.0: ''
+    0.2.0: Added population percentage

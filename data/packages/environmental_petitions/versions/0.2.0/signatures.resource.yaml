@@ -1,0 +1,63 @@
+title: Petition signatures by constituency
+description: Signatures from each constituency for environmental petitions with over
+  1000 overall signatures
+custom:
+  row_count: 177450
+path: signatures.csv
+name: signatures
+profile: tabular-data-resource
+scheme: file
+format: csv
+hashing: md5
+encoding: utf-8
+schema:
+  fields:
+  - name: petition_id
+    type: integer
+    description: ID for the petition
+    constraints:
+      unique: false
+    example: 629208
+  - name: gss
+    type: string
+    description: GSS code for constituency
+    constraints:
+      unique: false
+    example: E14000840
+  - name: signatures
+    type: number
+    description: Count of signatures from this constituency
+    constraints:
+      unique: false
+    example: 446.0
+  - name: std.res
+    type: number
+    description: Standardised residual of the count of signatures from this constituency
+      (above 2 is an outlier)
+    constraints:
+      unique: false
+    example: 313.41489935829577
+  - name: expected
+    type: number
+    description: Given normal distribution of signatures, expected count of signatures
+      from this constituency
+    constraints:
+      unique: false
+    example: 2.006842443348852
+  - name: significant
+    type: boolean
+    description: Boolean of whether the count of signatures from this constituency
+      is significantly different from the expected count
+    constraints:
+      unique: false
+      enum:
+      - true
+      - false
+    example: 'True'
+  - name: percentage_pop
+    type: number
+    description: From 1-100, the percentage of the 2020 estimated constituency that signed this petition.
+    constraints:
+      unique: false
+    example: 0.5043081028517153
+hash: 005b77261a91c93100833165b6036c46

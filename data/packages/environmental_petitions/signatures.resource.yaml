@@ -54,4 +54,11 @@ schema:
       - true
       - false
     example: 'True'
-hash: 6298d0b1ca7172653d9cb2db76273ad4
+  - name: percentage_pop
+    type: number
+    description: From 1-100, the percentage of the 2020 estimated constituency that
+      signed this petition.
+    constraints:
+      unique: false
+    example: 0.5043081028517153
+hash: 005b77261a91c93100833165b6036c46

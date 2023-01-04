@@ -197,6 +197,12 @@ def process_significance():
     # sort by highest number of signatures, and constituency
     chi_df = chi_df.sort_values(by=["petition_id", "signatures"], ascending=False)
 
+    # add population size
+    pop = pd.read_excel(str(Path("data", "raw", "con_pop.xlsx")))
+    chi_df = chi_df.merge(pop)
+    chi_df["percentage_pop"] = (chi_df["signatures"] / chi_df["pop_2020"]) * 100
+    chi_df = chi_df.drop(columns=["pop_2020"])
+
     chi_df.to_csv(
         Path("data", "interim", "constituency_signatures_with_significance.csv"),
         index=False,
