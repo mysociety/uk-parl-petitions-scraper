@@ -1059,11 +1059,6 @@
         "explanation": "This petition is not enviromental in nature as it focuses on traffic laws and protecting children.",
         "stub": "Traffic t"
     },
-    "Approve the Whitehaven Coal Mine in Cumbria World coal production is 8 billion tonnes. China alone produces 3.5 billion tonnes. The new colliery will produce around 4m tonnes of coal for steel making and should replace imported coal. It would close in 2049 and will provide the steel needed by the UK to comply with UK environmental targets.": {
-        "result": false,
-        "explanation": "This petition is not enviromental in nature as it focuses on the approval of a coal mine.",
-        "stub": "Approve t"
-    },
     "Change law to mean that if an adult discovers a dead body it must be reported At the moment, if a person finds the body of someone deceased, they are under no obligation to report this to the police. This means a body could be left for days, weeks etc. and remain undiscovered.": {
         "result": false,
         "explanation": "This petition is not enviromental in nature as it focuses on changing a law regarding dead bodies.",
@@ -1344,19 +1339,24 @@
         "explanation": "related to carbon emissions and cleaner fuels",
         "stub": "Exempt C"
     },
-    "Prohibit the sale and use in the UK of palm oil and its derivatives in foods We call on the Government, now a study has established that palmitic acid, a constituent of palm oil, can encourage the spread of some cancers, to end the sale and use of palm oil in Britain.": {
-        "result": true,
-        "explanation": "related to palm oil use and air pollution",
-        "stub": "Prohibi"
-    },
     "For the sake of wildlife & forests ban the release of balloons and sky lanterns. Please protect our environment by banning the release of balloons and sky lanterns.\r\nThousands of balloons and sky lanterns are released every year with little or no regard to the damage they do to our wildlife, seas and remaining forests.Government can no longer ignore the plight of nature.": {
         "result": true,
-        "explanation": "The petition is related to wildlife, forests and the environment",
+        "explanation": "This petition covers an environmental issue (banning the release of balloons and sky lanterns) as it is related to wildlife, forests and the environment.",
         "stub": "For the sa"
     },
     "Ban trail hunting on Ministry of Defence property The National Trust has recently said it will no longer offer licences for trail hunting on their properties. We believe the Ministry of Defence should do the same.": {
         "result": true,
-        "explanation": "The petition is related to hunting and the environment",
-        "stub": "Ban trail "
+        "explanation": "This petition covers an environmental issue (trail hunting on Ministry of Defence property) as it is related to wildlife and active travel.",
+        "stub": "Ban trail"
+    },
+    "Prohibit the sale and use in the UK of palm oil and its derivatives in foods We call on the Government, now a study has established that palmitic acid, a constituent of palm oil, can encourage the spread of some cancers, to end the sale and use of palm oil in Britain.": {
+        "result": true,
+        "explanation": "This petition covers an environmental issue (prohibition of the sale and use of palm oil) as it is related to air pollution, water pollution and carbon emissions.",
+        "stub": "Prohibit t"
+    },
+    "Approve the Whitehaven Coal Mine in Cumbria World coal production is 8 billion tonnes. China alone produces 3.5 billion tonnes. The new colliery will produce around 4m tonnes of coal for steel making and should replace imported coal. It would close in 2049 and will provide the steel needed by the UK to comply with UK environmental targets.": {
+        "result": true,
+        "explanation": "The petition relates to coal production, which could lead to higher carbon emissions, an environmental issue.",
+        "stub": "Approve t"
     }
 }

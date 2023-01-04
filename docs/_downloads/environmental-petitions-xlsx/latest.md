@@ -5,6 +5,6 @@ package: environmental_petitions
 title: environmental_petitions_xlsx
 filename: environmental_petitions.xlsx
 version: latest
-full_version: 0.2.0
+full_version: 0.2.1
 file: /data/environmental_petitions/latest/environmental_petitions.xlsx
 ---

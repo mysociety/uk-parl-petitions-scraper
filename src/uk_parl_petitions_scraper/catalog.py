@@ -48,8 +48,29 @@ def is_environmental_only_ten(
     if len(list_of_petitions) > 10:
         raise ValueError("List of petitions must be less than 10 items")
 
-    base_prompt = """Evaulate based on the names of a list of petitions made to the UK Parliament if they are enviromental in nature
-    Environmental petitions are those related to climate change, net zero, carbon emissions, air pollution, water pollution, wildlife, ecology, forests, hunting, active travel, cycling, footpaths, etc.
+    base_prompt = """
+    A list of petitions made to the UK Parliament, followed by an evaulation of if they cover environmental issues (true/false).
+    
+    Enviromental issues include themes or subjects such as:
+    
+    - climate change
+    - net zero
+    - carbon emissions
+    - air pollution
+    - water pollution
+    - wildlife
+    - ecology
+    - forests
+    - hunting
+    - active travel
+    - cycling
+    - footpaths
+    - coal mines
+    - oil drilling
+    - fracking
+
+   Look for non-direct explanations, e.g. coal production can lead to higher carbon emissions. 
+
     The original list is a Json encoded list of strings.
     Return a json list as the input list with the structure ["result": bool, "explanation": str, "stub": str (first ten characters of petition)].
     JSON bools are true and false, not True and False.

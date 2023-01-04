@@ -2,7 +2,7 @@
     "name": "environmental_petitions",
     "title": "Environmental petitions",
     "description": "UK Parliament petitions related (in a broad sense) to environmental issues\n",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "licenses": [
         {
             "name": "CC-BY-4.0",
@@ -47,7 +47,8 @@
         },
         "change_log": {
             "0.1.0": "",
-            "0.2.0": "Added population percentage"
+            "0.2.0": "Added population percentage",
+            "0.2.1": "Minor change in data for resource(s): petitions"
         }
     },
     "resources": [
@@ -184,7 +185,7 @@
                     }
                 ]
             },
-            "hash": "6c0a6fa0baf0fca64647a9c3d1d0d646"
+            "hash": "25db4e9ef1dd69ddef71cd50bb521552"
         },
         {
             "title": "Petition signatures by constituency",

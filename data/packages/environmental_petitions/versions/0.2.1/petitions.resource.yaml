@@ -1,0 +1,104 @@
+title: Environmental petitions
+description: Extraction of Environmental petitions from the UK Parliament petitions
+  website
+custom:
+  row_count: 754
+path: petitions.csv
+name: petitions
+profile: tabular-data-resource
+scheme: file
+format: csv
+hashing: md5
+encoding: utf-8
+schema:
+  fields:
+  - name: id
+    type: integer
+    description: Parliament ID for petition
+    constraints:
+      unique: true
+    example: 619781
+  - name: url
+    type: string
+    description: URL for petition json
+    constraints:
+      unique: true
+    example: https://petition.parliament.uk/petitions/619781.json
+  - name: state
+    type: string
+    description: State of petition
+    constraints:
+      unique: false
+      enum:
+      - open
+      - closed
+    example: open
+  - name: action
+    type: string
+    description: The main title of the petition
+    constraints:
+      unique: false
+    example: Call an immediate general election to end the chaos of the current government
+  - name: background
+    type: string
+    description: The background text to the petition
+    constraints:
+      unique: false
+    example: Call an immediate general election so that the people can decide who
+      should lead us through the unprecedented crises threatening the UK.
+  - name: additional_details
+    type: string
+    description: Additional details about the petition
+    constraints:
+      unique: false
+    example: The chaos engulfing the UK government is unprecedented. Over 40 ministers
+      resigned leaving departments without leadership during cost of living, energy
+      and climate crises. War rages in Ukraine; the Northern Ireland Protocol has
+      further damaged our relationship with Europe; recession looms; the UK itself
+      may cease to exist as Scotland seeks independence. This is the greatest set
+      of challenges we have seen in our lifetimes. Let the people decide who leads
+      us through this turmoil.
+  - name: signature_count
+    type: integer
+    description: Number of signatures on the petition
+    constraints:
+      unique: false
+    example: 901912
+  - name: date_created
+    type: string
+    description: Date petition was created
+    constraints:
+      unique: true
+    example: '2022-07-07T10:13:40.162Z'
+  - name: date_responded
+    type: string
+    description: Date petition was responded to
+    constraints:
+      unique: false
+    example: '2022-09-20'
+  - name: date_debated
+    type: string
+    description: Date petition was debated
+    constraints:
+      unique: false
+    example: '2022-10-17'
+  - name: is_environmental
+    type: boolean
+    description: Whether the petition is related to the environment (generated via
+      machine learning, some false negatives, generally good at removing the false
+      positives)
+    constraints:
+      unique: false
+      enum:
+      - false
+      - true
+    example: 'False'
+  - name: openai_explanation
+    type: string
+    description: OpenAI explanation for whether the petition is related to the environment
+      (do not use publically, generating it improves the results and it's useful for
+      debugging)
+    constraints:
+      unique: false
+    example: This petition does not relate to the environment.
+hash: 25db4e9ef1dd69ddef71cd50bb521552
